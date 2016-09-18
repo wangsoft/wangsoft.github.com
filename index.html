@@ -259,6 +259,67 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-removeOfficeScan" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/18/removeOfficeScan/" class="article-date">
+      <time datetime="2016-09-18T06:58:07.883Z" itemprop="datePublished">2016-09-18</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/18/removeOfficeScan/">彻底删除趋势的 OfficeScan</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <ol>
+<li>开始-&gt;执行-&gt;msconfig，把所有有关office scan的服务 + 启动项目全部取消勾选</li>
+<li>重开机进入安全模式</li>
+<li>开启regedit，在左面的窗口中找到如下路径<br>HKEY_LOCAL_MACHINE\SOFTWARE\TrendMicro\PC-cillinNTCorp\CurrentVersion\Misc.<br>如果是64为系统的话，路径是<br>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\TrendMicro\PC-cillinNTCorp\CurrentVersion\Misc.，把Allow Uninstall值修改为1，NoPwdProtect值修改为1</li>
+<li>欢乐卸载</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-ProductManager" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
